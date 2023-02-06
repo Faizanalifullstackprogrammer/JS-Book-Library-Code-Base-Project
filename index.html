@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> 
+</head>
+<body>
+  <div class="main-div ">
+    <p class='errormessage'>Please enter all the inputs</p>
+    <form class="main-form">
+      <div class="form-group mt-5 mb-3">
+        <button class='btn-danger cancel'>X</button>
+        <label>Book Name</label>
+        <input type="text" class="form-control" id="bookName" placeholder="Enter Book Name">
+      </div>
+      <div class="form-group mb-3">
+        <label>Book Author</label>
+        <input type="text" class="form-control" id="bookAuthor" placeholder="Enter Book Author">
+      </div>
+      <div class="form-group mb-3">
+        <label>Number of Pages</label>
+        <input type="number" class="form-control" id="pagesNumber" placeholder="Enter number of pages">
+      </div>
+      <div class="form-group mb-3">
+        <label>Choose Status:</label>
+        <select name="status" id="status">
+          <option value="Done!">Done!</option>
+          <option value="Not yet!">Not yet!</option>
+        </select>
+        <button class="submit mt-3 form-control">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="container display-books">
+    <div class='delete-icon'>
+      
+    </div>
+    <div>
+      
+      <h4 class="text-uppercase my-2 h2">Book Library</h4>
+    </div>
+    <button class="addbook btn btn-primary my-2">Add Book</button>
+    <div class="display-book row">
+    </div>
+  </div>
+
+
+  <script src="./src/main.js"></script>
+  <script src="https://kit.fontawesome.com/5b1eeceadd.js" crossorigin="anonymous"></script>
+</body>
+</html>
